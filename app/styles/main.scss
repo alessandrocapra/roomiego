@@ -104,7 +104,7 @@ body {
     
     &#problem {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
 
       & > header {
@@ -120,7 +120,7 @@ body {
 header {
   background-size: cover;
   width:100%;
-  min-height:50vh;
+  //min-height:50vh;
 }
 
  section {
