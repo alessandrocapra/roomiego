@@ -18,12 +18,35 @@ $icon-font-path: '../fonts/';
 
 /* Space out content a bit */
 body {
-  background-color: red;
+  background-color: black;
 
+}
+
+header {
+  background-size: cover;
+  width:100%;
+  min-height:50vh;
+}
+
+section.white {
+  h1 {
+    color:black;
+  }
+  background-color:#fefefe;
+}
+
+.number {
+  border-radius:130px;
+  width:130px;
+  padding-left:40px;
+  margin: 0 auto;
+  height:130px;
+  background-color:#366;
+  color:white;
+  font-size:80px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
 
 }
-
