@@ -40,11 +40,75 @@ body {
     background: #fff url("/images/cover.jpg");
     background-size: cover;
     border-radius: 5px;
-    transform: rotate(5deg);
-    transition: all .2s ease;
+    transition: transform 1s ease;
 
     &:hover {
-      transform: rotate(-3deg);
+      transform: rotateY(180deg);
+    }
+  }
+
+  // flip cards
+  .pulse {
+    animation-name: pulse_animation;
+    animation-duration: 2000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .flip-container {
+    perspective: 1000px;
+
+
+    /* flip the pane when hovered */
+    &:hover .flipper, &.hover .flipper {
+      transform: rotateY(180deg);
+    }
+  }
+
+  .flip-container, .front, .back {
+    width: 500px;
+    height: 500px;
+  }
+
+  /* flip speed goes here */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+
+  /* hide back of pane during swap */
+  .front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* front pane, placed above back */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+
+    &.problemo {
+      background: #fff url("/images/nice-guy.jpg") no-repeat center;
+      background-size: cover;
+      border-radius: 5px;
+    }
+  }
+
+  /* back, initially hidden pane */
+  .back {
+    transform: rotateY(180deg);
+
+    &.problemo-back {
+      background: #fff url("/images/drunk.jpg") no-repeat center;
+      background-size: cover;
+      border-radius: 5px;
     }
   }
 
@@ -90,4 +154,17 @@ header {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
 
+}
+
+
+// Animations
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  30% { transform: scale(1); }
+  40% { transform: scale(1.02); }
+  50% { transform: scale(1); }
+  60% { transform: scale(1); }
+  70% { transform: scale(1.02); }
+  80% { transform: scale(1); }
+  100% { transform: scale(1); }
 }
