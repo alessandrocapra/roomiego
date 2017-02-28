@@ -7,7 +7,7 @@ $icon-font-path: '../fonts/';
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
-  color: #000;
+  color: #fff;
   padding: 0.2em 0;
 }
 
@@ -15,6 +15,8 @@ $icon-font-path: '../fonts/';
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: black;
+  color: white;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -70,7 +72,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    /*max-width: 730px;*/
   }
 
   /* Remove the padding we set earlier */
