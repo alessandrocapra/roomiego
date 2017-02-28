@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700|Russo+One');
+
 $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+@import "variables";
+@import "typography";
 
 .browserupgrade {
   margin: 0.2em 0;
