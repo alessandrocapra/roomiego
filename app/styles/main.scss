@@ -20,7 +20,7 @@ $icon-font-path: '../fonts/';
 body {
   font-size:1.4em;
 
-  header {
+  & > header {
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/images/cover.jpg') no-repeat center;
     background-size: cover;
     height:90vh;
@@ -34,8 +34,35 @@ body {
     color: #fff;
   }
 
+  .photo {
+    width:500px;
+    height: 500px;
+    background: #fff url("/images/cover.jpg");
+    background-size: cover;
+    border-radius: 5px;
+    transform: rotate(5deg);
+    transition: all .2s ease;
+
+    &:hover {
+      transform: rotate(-3deg);
+    }
+  }
+
   section {
-    padding:3em;
+    padding:5em;
+    
+    &#problem {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      & > header {
+        flex-basis:50%;
+      }
+
+      background-color: #5FA6BC;
+      color: #fff;
+    }
   }
 }
 
