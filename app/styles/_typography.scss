@@ -32,8 +32,8 @@ h4 {
 
 p, span {
   font-family: $body-font-family;
-  font-size:1.6em;
-  line-height:1.4;
+  font-size: $body-font-size;
+  line-height: $body-font-size * 1.2;
 
   max-width: 35em;
 }
