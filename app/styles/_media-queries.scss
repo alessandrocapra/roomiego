@@ -1,0 +1,25 @@
+@media only screen and (max-width : 992px) {
+  body {
+    font-size:1em;
+
+    & > header {
+      padding:5em;
+      text-align: center;
+    }
+  }
+
+  section#problem {
+    flex-wrap: wrap;
+
+    & > * {
+      flex: 1 1 100%;
+    }
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  body {
+    font-size:.8em;
+  }
+
+}
