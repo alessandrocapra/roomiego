@@ -1,6 +1,7 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: $body-font-family;
   font-weight:$bold;
+  padding-bottom:.3em;
 }
 
 h1 {
@@ -31,5 +32,8 @@ h4 {
 
 p, span {
   font-family: $body-font-family;
-  font-size:1.4em;
+  font-size:1.6em;
+  line-height:1.4;
+
+  max-width: 35em;
 }
