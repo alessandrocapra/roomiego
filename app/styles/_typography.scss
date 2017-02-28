@@ -1,18 +1,24 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: $headings-font-family;
-  color:$headings-color;
+  font-family: $body-font-family;
+  font-weight:$bold;
 }
 
 h1 {
   font-size:6.075em;
+  font-family: $headings-font-family;
 
-  #logo {
+  &#logo {
     font-size:9.112em;
   }
 }
 
 h2 {
   font-size:4.05em;
+
+  &#subtitle {
+    font-family:$body-font-family;
+    font-weight: $bold;
+  }
 }
 
 h3 {
@@ -25,5 +31,5 @@ h4 {
 
 p, span {
   font-family: $body-font-family;
-  font-size:1.2em;
+  font-size:1.4em;
 }

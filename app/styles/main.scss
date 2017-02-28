@@ -18,12 +18,12 @@ $icon-font-path: '../fonts/';
 
 /* Space out content a bit */
 body {
-  font-size:1em;
+  font-size:1.4em;
 
   header {
-    background: url('/images/cover.jpg') no-repeat center;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/images/cover.jpg') no-repeat center;
     background-size: cover;
-    height:100vh;
+    height:90vh;
     width:100vw;
 
     display: flex;
@@ -32,10 +32,6 @@ body {
     align-items: center;
 
     color: #fff;
-
-    h1 {
-
-    }
   }
 }
 
