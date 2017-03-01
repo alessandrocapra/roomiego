@@ -6,10 +6,16 @@
       padding:5em;
       text-align: center;
     }
+
+    .flip-container, .front, .back {
+      width: 350px;
+      height: 350px;
+    }
   }
 
   section#problem {
     flex-wrap: wrap;
+    flex-direction:column-reverse;
 
     & > * {
       flex: 1 1 100%;
@@ -20,6 +26,11 @@
 @media only screen and (max-width : 768px) {
   body {
     font-size:.8em;
+
+    .flip-container, .front, .back {
+      width: 350px;
+      height: 350px;
+    }
   }
 
   p, span {

@@ -54,8 +54,8 @@ body {
   }
 
   .flip-container, .front, .back {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
   }
 
   /* flip speed goes here */
@@ -101,7 +101,7 @@ body {
 
   section {
     padding:5em;
-    
+
     &#problem {
       display: flex;
       justify-content: space-between;
