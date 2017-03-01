@@ -128,10 +128,12 @@ body {
       display: flex;
       justify-content: space-between;
       padding: 0;
+      margin:3em 0;
       background-color: transparent;
 
       article {
         display: flex;
+        justify-content: center;
         align-items: flex-start;
         flex-direction: column;
 
@@ -139,10 +141,33 @@ body {
 
         padding:2.5em;
         background: rgba(0,0,0,0.3);
+        color: #fff;
+        transition: all .5s ease-in-out;
+
+        border-radius: 5px;
+
+        &:hover {
+          transform: scale(1.2);
+        }
 
         & > h3 {
           align-self: center;
           text-align: center;
+        }
+
+        &:nth-child(1) {
+          background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/privacy.jpg") no-repeat center;
+          background-size: cover;
+        }
+
+        &:nth-child(2) {
+          background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/clean.jpg") no-repeat center;
+          background-size: cover;
+        }
+
+        &:nth-child(3) {
+          background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/reviews.jpg") no-repeat center;
+          background-size: cover;
         }
       }
     }
