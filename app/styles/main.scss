@@ -118,9 +118,33 @@ body {
     &#solution {
       display: flex;
       flex-direction: column;
+    }
+
+    &.white {
       background: url("/images/bg1.png");
+    }
 
+    #measures {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      background-color: transparent;
 
+      article {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        flex-basis:30%;
+
+        padding:2.5em;
+        background: rgba(0,0,0,0.4);
+
+        & > h3 {
+          align-self: center;
+          text-align: center;
+        }
+      }
     }
   }
 }
