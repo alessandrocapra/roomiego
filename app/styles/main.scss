@@ -114,6 +114,14 @@ body {
       background-color: #5FA6BC;
       color: #fff;
     }
+
+    &#solution {
+      display: flex;
+      flex-direction: column;
+      background: url("/images/bg1.png");
+
+
+    }
   }
 }
 
