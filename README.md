@@ -21,4 +21,10 @@
 
 `gulp serve`
 
+### Issues
+If the CSS is not loading after starting the server, use this commands from the terminal:
 
+```
+bower install --save bootstrap#3.3.4
+gulp wiredep
+```
