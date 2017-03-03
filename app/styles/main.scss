@@ -101,6 +101,16 @@ body {
 
   section {
     padding:5em;
+    min-height:70vh;
+
+    display: flex;
+    flex-wrap: wrap;
+
+
+    &.reversed {
+      justify-content: flex-end;
+      text-align: justify;
+    }
 
     &#problem {
       display: flex;
@@ -118,9 +128,6 @@ body {
     &#solution {
       display: flex;
       flex-direction: column;
-    }
-
-    &.white {
       background: url("/images/bg1.png");
     }
 
@@ -133,7 +140,7 @@ body {
 
       article {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: flex-start;
         flex-direction: column;
 
@@ -169,6 +176,21 @@ body {
           background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/reviews.jpg") no-repeat center;
           background-size: cover;
         }
+      }
+    }
+
+    #pricing {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+
+      section {
+        display: flex;
+        justify-content: center;
+        flex-basis:40%;
+
+        background: rgba(0,0,0,0.4);
+        text-align: center;
       }
     }
   }
