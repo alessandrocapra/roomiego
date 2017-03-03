@@ -104,17 +104,18 @@ body {
     min-height:70vh;
 
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
 
     &.reversed {
-      justify-content: flex-end;
+      align-items: flex-end;
       text-align: justify;
     }
 
     &#problem {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
 
@@ -133,6 +134,12 @@ body {
         background-size: cover;
         color: #fff;
       }
+
+      &#third {
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/people-chatting.jpg") no-repeat center;
+        background-size: cover;
+        color: #fff;
+      }
     }
 
     &#solution {
@@ -143,6 +150,7 @@ body {
 
     #measures {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
 
       padding: 0;
