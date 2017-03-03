@@ -199,10 +199,15 @@ body {
       }
     }
 
-    #pricing {
+    &#pricing {
+      background: url("/images/bg1.png");
+    }
+
+    #pricing-plans {
       display: flex;
       justify-content: space-around;
       width: 100%;
+      background: transparent;
 
       section {
         display: flex;
@@ -213,30 +218,42 @@ body {
         text-align: center;
       }
     }
+
+    &#newsletter {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/newsletter.jpg") no-repeat center;
+      background-size: cover;
+      color: #fff;
+
+      display: flex;
+      align-items: flex-end;
+    }
+
+    &#team {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/team.jpg") no-repeat center;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  & > footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:10vh;
+
+    background: #cecece;
+
+    p {
+      margin:0;
+      padding:0;
+    }
   }
 }
-
-header {
-  background-size: cover;
-  width:100%;
-  //min-height:50vh;
-}
-
- section {
-  background-color:#fefefe;
-}
-
-.number {
-  border-radius:130px;
-  width:130px;
-  padding-left:40px;
-  margin: 0 auto;
-  height:130px;
-  background-color:#366;
-  color:white;
-  font-size:80px;
-}
-
 
 // Animations
 @keyframes pulse_animation {
