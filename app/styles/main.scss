@@ -233,7 +233,7 @@ body {
       align-items: center;
       justify-content: flex-end;
 
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/team.jpg") no-repeat center;
+      background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("/images/team.jpg") no-repeat center;
       background-size: cover;
       color: #fff;
       text-align: center;
@@ -242,15 +242,36 @@ body {
 
   & > footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height:10vh;
+    min-height: 5vh;
+    padding:5em;
 
     background: #cecece;
 
     p {
       margin:0;
       padding:0;
+    }
+
+    section {
+      min-height: 5vh;
+    }
+
+    .social-network {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      padding:0;
+
+      flex-basis:40%;
+
+      a {
+        width:80px;
+        height:80px;
+        background: red;
+        margin-left: 1em;
+      }
     }
   }
 }
