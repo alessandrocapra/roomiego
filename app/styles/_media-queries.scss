@@ -92,6 +92,17 @@
 
       align-self: center;
     }
+
+    section {
+
+      &#team {
+        justify-content: center;
+        margin-top:-15em;
+        margin-bottom:-15em;
+
+        font-size:.6em;
+      }
+    }
   }
 
 }
