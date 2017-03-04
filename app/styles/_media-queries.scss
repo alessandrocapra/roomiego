@@ -76,3 +76,22 @@
   }
 
 }
+
+@media only screen and (max-width: 375px) {
+  h1 {
+    &#logo {
+      font-size:7.5em;
+    }
+  }
+
+  body {
+
+    .flip-container, .front, .back {
+      width: 200px;
+      height: 200px;
+
+      align-self: center;
+    }
+  }
+
+}
