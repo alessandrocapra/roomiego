@@ -31,6 +31,44 @@
       width: 350px;
       height: 350px;
     }
+
+    section {
+      #measures {
+        flex-wrap: wrap;
+
+        article {
+          flex-basis:100%;
+          margin-bottom: 5em;
+
+          &:last-child {
+            margin-bottom:0;
+          }
+        }
+      }
+
+      #pricing-plans {
+        flex-wrap: wrap;
+
+        section {
+          flex-basis:100%;
+
+          &:not(:last-child) {
+            margin-bottom:5em;
+          }
+        }
+      }
+
+      &#newsletter {
+        #share {
+          align-self: center;
+        }
+      }
+
+      &#team {
+        background-size: contain;
+        height:100px;
+      }
+    }
   }
 
   p, span {

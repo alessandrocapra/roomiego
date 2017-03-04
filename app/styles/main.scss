@@ -6,6 +6,8 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+@import "compass";
+@import "mixins";
 @import "variables";
 @import "typography";
 
@@ -145,6 +147,9 @@ body {
     &#solution {
       display: flex;
       flex-direction: column;
+      align-items: center;
+
+      text-align: center;
       background: url("/images/bg1.png");
     }
 
@@ -226,6 +231,20 @@ body {
 
       display: flex;
       align-items: flex-end;
+
+      #share {
+        display: flex;
+
+        a {
+          font-size:9em;
+          transition: all 1s ease;
+
+          &:hover {
+            transform: rotate(360deg);
+            color: indianred;
+          }
+        }
+      }
     }
 
     &#team {
@@ -245,7 +264,7 @@ body {
     justify-content: space-between;
     align-items: center;
     min-height: 5vh;
-    padding:5em;
+    padding:3em;
 
     background: #cecece;
 
@@ -267,10 +286,7 @@ body {
       flex-basis:40%;
 
       a {
-        width:80px;
-        height:80px;
-        background: red;
-        margin-left: 1em;
+        font-size:6em;
       }
     }
   }
