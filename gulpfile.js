@@ -10,6 +10,8 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 const compass = require('compass-importer');
 
+var ghPages = require('gulp-gh-pages');
+
 var dev = true;
 
 gulp.task('styles', () => {
@@ -168,4 +170,9 @@ gulp.task('default', () => {
     dev = false;
     runSequence(['clean', 'wiredep'], 'build', resolve);
   });
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
