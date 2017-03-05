@@ -10,15 +10,18 @@ h1 {
 
   &#logo {
     font-size:9.112em;
+    color: $white;
   }
 }
 
 h2 {
   font-size:4.05em;
+  color: $ink;
 
   &#subtitle {
     font-family:$body-font-family;
     font-weight: $bold;
+    color: $white;
   }
 }
 
