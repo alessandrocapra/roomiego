@@ -168,7 +168,7 @@ body {
     }
 
     &.process {
-      
+
       &#first {
         background: $posy;
         color: $white;
@@ -192,9 +192,11 @@ body {
       background-size: cover;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
       color: #fff;
       text-align: left;
+      min-height:110vh;
     }
 
     #measures {
@@ -275,7 +277,7 @@ body {
 
       display: flex;
       align-items: center;
-      
+
       h2 {
         color: $red;
       }
@@ -304,7 +306,7 @@ body {
       background-size: cover;
       color: #fff;
       text-align: center;
-      
+
       h2 {
         color: $white;
       }
