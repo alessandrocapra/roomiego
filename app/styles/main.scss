@@ -188,10 +188,12 @@ body {
     }
 
     &#solution {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/help-you.jpeg") no-repeat center;
+      background-size: cover;
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      color: #fff;
       text-align: left;
     }
 
