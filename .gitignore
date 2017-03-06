@@ -6,3 +6,4 @@ test/bower_components
 .idea/
 .DS_Store
 app/.DS_Store
+.publish/
